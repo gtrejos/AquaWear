@@ -1,5 +1,6 @@
 # AquaWear Landing Page
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/014a7832-54af-4d5a-804c-04ba68a170aa)
+
 > **Desarrolladora:**
 > - Gissell Trejos
 
