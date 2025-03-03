@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/navegacion.css">
+        <link rel="stylesheet" href="../css/destacados.css">
+        <link rel="stylesheet" href="../css/productos.css">
+        <link rel="stylesheet" href="../css/nosotros.css">
+        <link rel="stylesheet" href="../css/nosotros.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- header Gisse-->
+        <header id="nav-header-main">
+            <nav id="nav-container-main">
+                <!-- Contenedor del Logo -->
+                <div id="nav-logo-container">
+                    <a href="#" id="nav-logo-link">
+                        <img id="nav-logo-image" src="../img/logo5-05.png"
+                            alt="Logo Aqua">
+                    </a>
+                </div>
+                <!-- Menú de Navegación Principal -->
+                <ul id="nav-menu-list">
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link">Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#destacados-container"
+                            class="nav-menu-link">Destacados</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#productos-container"
+                            class="nav-menu-link">Productos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#nosotros-container"
+                            class="nav-menu-link">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Botón de Menú Móvil -->
+                <button id="nav-mobile-toggle">☰</button>
+            </nav>
+        </header>
+        <!-- Productos destacados Ana-->
+        <!-- banner carrusel de imagenes con bootstrap-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/banner.4.webp" class="d-block w-100"
+                        alt="imagen1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/banner1-.jpg" class="d-block w-100"
+                        alt="imagen2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/banner.5.jpg" class="d-block w-100"
+                        alt="imagen3">
+                </div>
+            </div>
+        </div>
+        <div class="divisor-banner">
+            <p class="texto-oferta">¡Envío gratis por compras mayores a
+                $200!</p>
+        </div>
+        <!-- Mostrar productos agregados al carrito-->
+        <div class="d-flex flex-row-reverse">
+            <div class="p-2">
+                <button id="boton-carrito" type="button"
+                    class="btn btn-primary">
+                    <svg width="16" height="16" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg> <span id="contador-productos"
+                        class="badge text-bg-secondary">0</span>
+                </button>
+            </div>
+        </div>
+        <!-- Sección de productos destacados-->
+        <div id="destacados-container">
+            <section class="destacados">
+                <h2>Productos Destacados</h2>
+                <div class="contenedor-productos">
+                    <div class="card-producto">
+                        <img class="imagen"
+                            src="../img/Vestido-de-Bano-mujer-Azul.webp"
+                            alt="Producto 1">
+                        <h3>Vestido De Baño Tricolor Mixed</h3>
+                        <p class="texto-precio">$49.99</p>
+                        <button class="boton-comprar"
+                            onclick="incrementoContador()">Añadir al
+                            carrito</button>
+                        <div class="franja">
+                            <p class="texto-oferta">¡En oferta AHORA!</p>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <img class="imagen"
+                            src="../img/Camiseta-sunshine-Mujer-Azul.webp"
+                            alt="Producto 2">
+                        <h3>Vestido De Baño Manga Larga Ac Rain</h3>
+                        <p class="texto-precio">$39.99</p>
+                        <button class="boton-comprar"
+                            onclick="incrementoContador()">Añadir al
+                            carrito</button>
+                        <div class="franja">
+                            <p class="texto-oferta">¡En oferta AHORA!</p>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <img class="imagen"
+                            src="../img/Vestido-de-Bano-Mujer-Negro.webp"
+                            alt="Producto 3">
+                        <h3>Vestido De Baño Colourblock</h3>
+                        <p class="texto-precio">$29.99</p>
+                        <button class="boton-comprar"
+                            onclick="incrementoContador()">Añadir al
+                            carrito</button>
+                        <div class="franja">
+                            <p class="texto-oferta">¡En oferta AHORA!</p>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <img class="imagen"
+                            src="../img/Pantaloneta-Hombre-Multicolor.webp"
+                            alt="Producto 4">
+                        <h3>Pantaloneta Contempo Coastline</h3>
+                        <p class="texto-precio">$59.99</p>
+                        <button class="boton-comprar"
+                            onclick="incrementoContador()">Añadir al
+                            carrito</button>
+                        <div class="franja">
+                            <p class="texto-oferta">¡En oferta AHORA!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Productos Alejandro-->
+        <div id="productos-container">
+            <section class="productos-seccion">
+                <h2 class="productos-titulo">Productos </h2>
+                <!-- Sección Mujer -->
+                <div class="categoria">
+                    <h2 class="categoria-titulo">Mujer</h2>
+                    <div class="productos-grid">
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://contents.mediadecathlon.com/p2375390/k$a2edd931c8700a0b52a71c97f68540da/vestido-de-bano-enterizo-mujer-natacion-kamiye-azulslashverde.jpg?format=auto&quality=40&f=800x800"
+                                    alt="Producto Mujer 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Vestido
+                                    natación</h3>
+                                <hr>
+                                <p class="producto-precio">$59.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/00d44bea8fb04b28b52615d68d73d96c_9366/traje-de-natacion-adicolor-3-franjas.jpg"
+                                    alt="Producto Mujer 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Enterizo de
+                                    baño</h3>
+                                <hr>
+                                <p class="producto-precio">$59.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://arena.vteximg.com.br/arquivos/ids/183651-0-0/11A2116-AGUA-W-CLOROEXTRA-1.png?v=638328023950430000"
+                                    alt="Producto Mujer 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Body lift
+                                    natación</h3>
+                                <hr>
+                                <p class="producto-precio">$59.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://dojiw2m9tvv09.cloudfront.net/69760/product/relax-long-lady-1-42-034189.jpg"
+                                    alt="Producto Mujer 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Body lift
+                                    natación</h3>
+                                <hr>
+                                <p class="producto-precio">$59.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sección Niños -->
+                <div class="categoria">
+                    <h2 class="categoria-titulo">Niños</h2>
+                    <div class="productos-grid">
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://pepeganga.vtexassets.com/arquivos/ids/1072761/125740169-2.png?v=638393715947500000"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Conjunto
+                                    Infantil</h3>
+                                <hr>
+                                <p class="producto-precio">$39.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://mayor.lenceriamoda.com/images/products_gallery/6581dd291b687350177124.jpg"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Conjunto
+                                    Infantil</h3>
+                                <hr>
+                                <p class="producto-precio">$39.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://www.colorfingers.com/cdn/shop/files/513_600x.jpg?v=1688607457"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Conjunto
+                                    Infantil</h3>
+                                <hr>
+                                <p class="producto-precio">$39.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://aguabendita.vtexassets.com/arquivos/ids/213142/Azure-Iliana-One-Piece-15391-1.jpg?v=638584926865070000"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Conjunto
+                                    Infantil</h3>
+                                <hr>
+                                <p class="producto-precio">$39.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sección Hombre -->
+                <div class="categoria">
+                    <h2 class="categoria-titulo">Hombre</h2>
+                    <div class="productos-grid">
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/3496085.jpg?scale=500&qlty=75"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Camisa Casual</h3>
+                                <hr>
+                                <p class="producto-precio">$49.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <img
+                                src="https://http2.mlstatic.com/D_NQ_NP_674080-CBT75622759980_042024-O.webp"
+                                alt="Producto Hombre 1" class="producto-imagen">
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Camisa Casual</h3>
+                                <hr>
+                                <p class="producto-precio">$49.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://http2.mlstatic.com/D_758592-CBT80181371678_112024-O.jpg"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Camisa Casual</h3>
+                                <hr>
+                                <p class="producto-precio">$49.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                        <div class="producto-card">
+                            <div class="imagen-producto">
+                                <img
+                                    src="https://http2.mlstatic.com/D_Q_NP_2X_741292-MPE74041064423_012024-T.webp"
+                                    alt="Producto Niños 1"
+                                    class="producto-imagen">
+                            </div>
+                            <div class="producto-info">
+                                <h3 class="producto-nombre">Camisa Casual</h3>
+                                <hr>
+                                <p class="producto-precio">$49.99</p>
+                                <button class="btn-agregar" button
+                                    class="btn-agregar"
+                                    onclick="incrementoContador()">Añadir al
+                                    carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- About us Amalia-->
+        <div id="nosotros-container">
+            <section class="intro">
+                <h2>La historia de AquaWear</h2>
+            </section>
+        </div>
+        <section class="story">
+            <div class="story-container">
+                <div class="image-container">
+                    <img src="../img/nosotros.jpg" alt="Historia de AquaWear"
+                        class="story-image">
+                </div>
+                <div class="text-container">
+                    <h2>Cómo comenzó AquaWear</h2>
+                    <p>AquaWear nació del sueño de un grupo de programadores
+                        que, mientras cursaban un bootcamp, decidieron crear una
+                        tienda especializada en artículos de natación. Su visión
+                        era combinar tecnología y deporte, ofreciendo productos
+                        de calidad e información detallada sobre todo lo
+                        relacionado con la natación.</p>
+                </div>
+            </div>
+        </section>
+        <div class="team-container">
+            <div class="participant-card">
+                <img src="../img/Alejo.jpg" alt="Foto de Alejandro"
+                    class="participant-photo">
+                <h3>Alejandro</h3>
+                <p class="role">Programador Backend</p>
+                <p class="description">Alejandro se especializa en construir
+                    soluciones robustas y optimizar sistemas, utilizando
+                    lenguajes como Python y Java.</p>
+                <a
+                    href="https://www.linkedin.com/in/pedro-alejandro-gutierrez-garcia-05530796/"
+                    target="_blank" class="linkedin-btn">LinkedIn</a>
+            </div>
+            <div class="participant-card">
+                <img src="../img/Gissell.jpg" alt="Foto de Gissell"
+                    class="participant-photo">
+                <h3>Gissell</h3>
+                <p class="role">Experta en Diseño Gráfico UX/UI</p>
+                <p class="description">Gissell crea experiencias visuales
+                    atractivas y funcionales, combinando creatividad y
+                    estrategia en cada diseño.</p>
+                <a href="https://www.linkedin.com/in/gisselltrejosmarin/"
+                    target="_blank" class="linkedin-btn">LinkedIn</a>
+            </div>
+            <div class="participant-card">
+                <img src="../img/Ana.jpg" alt="Foto de Ana"
+                    class="participant-photo">
+                <h3>Ana</h3>
+                <p class="role">Desarrolladora Full-Stack</p>
+                <p class="description">Ana construye soluciones completas para
+                    el frontend y backend, garantizando aplicaciones eficientes
+                    y escalables.</p>
+                <a href="https://www.linkedin.com/in/ana-leguizamon-forero/"
+                    target="_blank" class="linkedin-btn">LinkedIn</a>
+            </div>
+            <div class="participant-card">
+                <img src="../img/Amalia.jpg" alt="Foto de Amalia"
+                    class="participant-photo">
+                <h3>Amalia</h3>
+                <p class="role">Desarrolladora Frontend</p>
+                <p class="description">Amalia crea interfaces visuales
+                    atractivas y responsivas, utilizando HTML, CSS y JavaScript
+                    para garantizar una excelente experiencia de usuario.</p>
+                <a href="https://www.linkedin.com/in/amalia" target="_blank"
+                    class="linkedin-btn">LinkedIn</a>
+            </div>
+        </div>
+        <!-- Footer Gisse-->
+        <footer id="main-footer">
+            <footer class="footer-container">
+                <!-- Logo space -->
+                <div id="logo-space" class="footer-logo">
+                    <img id="nav-logo-image" src="../img/agua2-02.png"
+                        alt="Logo Aqua">
+                </div>
+                <div class="footer-content">
+                    <!-- Contact Information Section -->
+                    <div id="contact-section" class="footer-section">
+                        <h3>CONTÁCTENOS</h3>
+                        <p>Correo: info@aquawear.com</p>
+                        <p>Línea Nacional: 01 8000 123 456</p>
+                        <p>Horario de atención:</p>
+                        <p>Lunes a Viernes (8:00 AM - 8:00 PM)</p>
+                        <p>Ubicación: Medellín, Colombia</p>
+                    </div>
+                    <!-- Site Information Section -->
+                    <div id="info-section" class="footer-section">
+                        <h3>INFORMACIÓN DEL SITIO</h3>
+                        <p>
+                            <a href="#">Términos y condiciones de uso</a>
+                        </p>
+                        <p>
+                            <a href="#">Aviso de privacidad</a>
+                        </p>
+                        <p>
+                            <a href="#">Política de envíos</a>
+                        </p>
+                        <p>
+                            <a href="#">Política de cambios, garantías y
+                                devoluciones</a>
+                        </p>
+                        <p>
+                            <a href="#">Política de protección de datos
+                                personales</a>
+                        </p>
+                    </div>
+                    <!-- Copyright Section -->
+                    <p> 2025 AquaWear. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </body>
+        <script src="../script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+    </html>

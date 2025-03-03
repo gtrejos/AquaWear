@@ -1,0 +1,111 @@
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  /*Estilos del contenedor general de productos destacados*/
+  .destacados {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  /*Estilos del título de destacados*/
+  .destacados h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  /*Estilo del contenerdor de productos*/
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  /*Estilo las cards de los prodcutos*/
+  .card-producto {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /*Atributos de las imagenes de destacados*/
+  .imagen{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .card-producto h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #333;
+  }
+  /*Atributos texto del precio*/
+  .card-producto , .texto-precio {
+    color: #072AC8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+    /*Botón de comprar*/
+  .boton-comprar {
+    padding: 10px 15px;
+    background-color: #072AC8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;  
+  }
+
+  .boton-comprar:hover {
+    background-color: #1E96FC;
+    transform: scale(1.1); 
+  }
+    /*Atributos de la franja azul en las cards*/
+  .franja   {
+    margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px; 
+    background-color: #F3D914; 
+
+    align-content: center;
+  }
+    /*Atributos del texto de oferta*/
+  .texto-oferta{
+    font-weight: bold;
+    color:#ffffff;
+    margin-top: 8px;
+    font-size: medium;
+  }
+  
+  .divisor-banner{
+    font-family: 'Oswald', sans-serif;
+    background-color: #1f1f1f;
+    text-align: center;
+  }
+
+  #boton-carrito{
+    position: fixed;
+    top:10px;
+    right: 0;
+    z-index: 3;
+
+  }

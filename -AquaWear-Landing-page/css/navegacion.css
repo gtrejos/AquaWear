@@ -1,0 +1,195 @@
+/* ==========================================
+   Estilos Generales - Reset y Variables
+   ========================================== */
+   :root {
+    --header-height: 100px;
+    --header-height-mobile: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ==========================================
+   Header y Contenedor Principal
+   ========================================== */
+#nav-header-main {
+    width: 100%;
+    background: linear-gradient(90deg, #0039CC 0%, #66B2FF 100%);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 max(2rem, 5%); /* Padding responsivo */
+    position: fixed;
+    z-index: 2;
+}
+
+#nav-container-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ==========================================
+   Logo y Contenedor
+   ========================================== */
+#nav-logo-container {
+    padding: 0;
+    height: 100; /*altura del contenedor del logo */
+    display: flex;
+    align-items: center;
+}
+
+#nav-logo-link {
+    display: block;
+    height: 100%;
+}
+
+#nav-logo-image {
+    height: 100%;
+    width: auto;
+    min-height: 100px; /* altura mínima para el logo */
+    max-height: 150px; /* altura máxima para el logo */
+}
+
+/* ==========================================
+   Menú de Navegación Principal
+   ========================================== */
+#nav-menu-list {
+    display: flex;
+    gap: clamp(1.5rem, 4vw, 2.5rem); /* Espaciado responsivo entre elementos */
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-menu-item {
+    position: relative;
+}
+
+.nav-menu-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 14px 16px; /* Padding para los enlaces del menú */
+}
+
+.nav-menu-link:hover {
+    background-color: #FCF300;
+    color: black;
+    border-radius: 10px;
+}
+
+/* ==========================================
+   Botón Móvil
+   ========================================== */
+#nav-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: white;
+    cursor: pointer;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+.footer-container {
+    background: linear-gradient(90deg, #0039CC 0%, #66B2FF 100%);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Ajusta la altura del logo */
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-height: 100%;
+    width: auto;
+}
+
+.footer-section {
+    padding: 0 1rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section a {
+    margin-bottom: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   Media Queries para Responsividad
+   ========================================== */
+@media (max-width: 768px) {
+    #nav-container-main {
+        flex-direction: column;
+    }
+
+    #nav-menu-list {
+        flex-direction: column;
+        display: none;
+    }
+
+    #nav-menu-list.active {
+        display: flex;
+    }
+
+    #nav-mobile-toggle {
+        display: block;
+    }
+
+    .footer-container {
+        padding: 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo {
+        height: 100px; /* Ajusta la altura del logo para móviles */
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+}
