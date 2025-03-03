@@ -1,8 +1,11 @@
 # AquaWear Landing Page
 ![image](https://github.com/user-attachments/assets/014a7832-54af-4d5a-804c-04ba68a170aa)
 
-> **Desarrolladora:**
-> - Gissell Trejos
+> **Desarrolladores:**
+Ana Leguizamón
+Amalia Tineo
+Alejandro Gutierrez
+Gissell Trejos
 
 ## Guía de Diseño
 
